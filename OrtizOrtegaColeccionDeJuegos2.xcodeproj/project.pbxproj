@@ -14,6 +14,7 @@
 		348431C92CB2F89B0065433F /* OrtizOrtegaColeccionDeJuegos2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 348431C72CB2F89B0065433F /* OrtizOrtegaColeccionDeJuegos2.xcdatamodeld */; };
 		348431CB2CB2F89C0065433F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 348431CA2CB2F89C0065433F /* Assets.xcassets */; };
 		348431CE2CB2F89C0065433F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 348431CC2CB2F89C0065433F /* LaunchScreen.storyboard */; };
+		348431D62CB318FE0065433F /* JuegosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348431D52CB318FE0065433F /* JuegosViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		348431CA2CB2F89C0065433F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		348431CD2CB2F89C0065433F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		348431CF2CB2F89C0065433F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		348431D52CB318FE0065433F /* JuegosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuegosViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		348431BD2CB2F89B0065433F /* OrtizOrtegaColeccionDeJuegos2 */ = {
 			isa = PBXGroup;
 			children = (
+				348431D52CB318FE0065433F /* JuegosViewController.swift */,
 				348431BE2CB2F89B0065433F /* AppDelegate.swift */,
 				348431C02CB2F89B0065433F /* SceneDelegate.swift */,
 				348431C22CB2F89B0065433F /* ViewController.swift */,
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				348431D62CB318FE0065433F /* JuegosViewController.swift in Sources */,
 				348431C32CB2F89B0065433F /* ViewController.swift in Sources */,
 				348431BF2CB2F89B0065433F /* AppDelegate.swift in Sources */,
 				348431C12CB2F89B0065433F /* SceneDelegate.swift in Sources */,
