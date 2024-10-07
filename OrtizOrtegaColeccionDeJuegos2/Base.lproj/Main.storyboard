@@ -33,7 +33,7 @@
                     <navigationItem key="navigationItem" id="9Gn-Lt-abA">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="3wN-yN-76H">
                             <connections>
-                                <segue destination="0Bx-YM-PX3" kind="show" id="Coj-7D-fad"/>
+                                <segue destination="0Bx-YM-PX3" kind="show" identifier="juegoSegue" id="Coj-7D-fad"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -66,23 +66,37 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OhF-eA-e6f">
-                                <rect key="frame" x="179.5" y="344" width="55" height="30"/>
+                                <rect key="frame" x="179.5" y="575" width="55" height="30"/>
                                 <state key="normal" title="Agregar"/>
                                 <connections>
                                     <action selector="agregarTapped:" destination="0Bx-YM-PX3" eventType="touchUpInside" id="4Rc-P6-NQ6"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Co5-4F-Eia">
+                                <rect key="frame" x="179.5" y="620" width="55" height="30"/>
+                                <state key="normal" title="Eliminar"/>
+                                <connections>
+                                    <action selector="eliminarTapped:" destination="0Bx-YM-PX3" eventType="touchUpInside" id="nyC-ME-bgj"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cIu-Ea-Xet">
+                                <rect key="frame" x="47" y="344" width="320" height="216"/>
+                            </pickerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0lw-Js-wRE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="OhF-eA-e6f" firstAttribute="top" secondItem="I6n-wA-PZu" secondAttribute="bottom" constant="20" id="7sE-3M-lrr"/>
+                            <constraint firstItem="Co5-4F-Eia" firstAttribute="top" secondItem="OhF-eA-e6f" secondAttribute="bottom" constant="15" id="7hw-QU-g3D"/>
                             <constraint firstItem="I6n-wA-PZu" firstAttribute="top" secondItem="mgL-iy-pIB" secondAttribute="bottom" constant="20" id="DCl-Ek-guB"/>
                             <constraint firstItem="mgL-iy-pIB" firstAttribute="centerX" secondItem="X7p-Vi-oyH" secondAttribute="centerX" id="HJG-4s-IvR"/>
                             <constraint firstItem="I6n-wA-PZu" firstAttribute="centerX" secondItem="X7p-Vi-oyH" secondAttribute="centerX" id="IPT-MV-mrK"/>
+                            <constraint firstItem="Co5-4F-Eia" firstAttribute="centerX" secondItem="X7p-Vi-oyH" secondAttribute="centerX" id="OSI-3Z-q9e"/>
+                            <constraint firstItem="cIu-Ea-Xet" firstAttribute="top" secondItem="I6n-wA-PZu" secondAttribute="bottom" constant="20" id="VO7-gC-htD"/>
                             <constraint firstItem="mgL-iy-pIB" firstAttribute="top" secondItem="0lw-Js-wRE" secondAttribute="top" constant="32" id="Wjf-Fz-aZS"/>
                             <constraint firstItem="OhF-eA-e6f" firstAttribute="centerX" secondItem="X7p-Vi-oyH" secondAttribute="centerX" id="Z7y-Dg-320"/>
                             <constraint firstItem="I6n-wA-PZu" firstAttribute="width" secondItem="mgL-iy-pIB" secondAttribute="width" id="ggH-CV-9Wr"/>
+                            <constraint firstItem="cIu-Ea-Xet" firstAttribute="centerX" secondItem="X7p-Vi-oyH" secondAttribute="centerX" id="mvT-gw-H3c"/>
+                            <constraint firstItem="OhF-eA-e6f" firstAttribute="top" secondItem="cIu-Ea-Xet" secondAttribute="bottom" constant="15" id="tMB-nM-hBh"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="IAF-dI-UB3">
@@ -100,7 +114,10 @@
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
+                        <outlet property="agregarActualizarBoton" destination="OhF-eA-e6f" id="VqT-Pc-wmN"/>
+                        <outlet property="eliminarBoton" destination="Co5-4F-Eia" id="314-Th-Ez5"/>
                         <outlet property="imageView" destination="mgL-iy-pIB" id="ywa-Xo-dEd"/>
+                        <outlet property="pickerView" destination="cIu-Ea-Xet" id="UOL-3E-ajF"/>
                         <outlet property="tituloTextField" destination="I6n-wA-PZu" id="ZHT-Aa-7pw"/>
                     </connections>
                 </viewController>
